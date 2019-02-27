@@ -1,0 +1,30 @@
+FROM php:7.2.2-fpm
+RUN apt-get update && apt-get install -y mysql-client --no-install-recommends \
+ && docker-php-ext-install pdo_mysql 
+
+RUN pecl install -o -f redis \
+ &&  rm -rf /tmp/pear \
+ &&  docker-php-ext-enable redis
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpng-dev \
+    libjpeg62-turbo-dev \
+    libfreetype6-dev \
+    locales \
+    jpegoptim optipng pngquant gifsicle
+
+# Clear cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Install extensions
+RUN docker-php-ext-install mbstring zip exif pcntl
+RUN docker-php-ext-configure gd --with-gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ --with-png-dir=/usr/include/
+RUN docker-php-ext-install gd
+
+WORKDIR /var/www
+
+COPY ./ /var/www
+
+RUN chmod -R 777 /var/www/storage

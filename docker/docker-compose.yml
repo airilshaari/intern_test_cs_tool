@@ -1,0 +1,33 @@
+version: '2'
+services:
+
+  # The Application
+  app:
+    image: 859403546324.dkr.ecr.ap-southeast-1.amazonaws.com/app-api:latest
+    build:
+      context: ../
+      dockerfile: docker/app.docker
+    working_dir: /var/www
+    logging:
+      driver: awslogs
+      options: 
+        awslogs-group: docker-private
+        awslogs-region: ap-southeast-1
+        awslogs-stream-prefix: api-app
+  # The Web Server
+  web:
+    image: 859403546324.dkr.ecr.ap-southeast-1.amazonaws.com/web-api:latest
+    build:
+      context: ../
+      dockerfile: docker/web.docker
+    working_dir: /var/www
+    ports:
+      - 80:80
+   # links:
+    #  - app
+    logging:
+      driver: awslogs
+      options: 
+        awslogs-group: docker-private
+        awslogs-region: ap-southeast-1
+        awslogs-stream-prefix: api-nginx
