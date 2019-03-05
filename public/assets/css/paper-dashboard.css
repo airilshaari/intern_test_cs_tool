@@ -850,8 +850,8 @@ fieldset[disabled] .btn-success.active {
 }
 
 .navbar .navbar-nav > li > a.btn-info, .btn-info {
-    border-color: #68B3C8;
-    color: #68B3C8;
+    border-color: #feb612;
+    color: #feb612;
 }
 
 .navbar .navbar-nav > li > a.btn-info:hover, .navbar .navbar-nav > li > a.btn-info:focus, .navbar .navbar-nav > li > a.btn-info:active, .navbar .navbar-nav > li > a.btn-info.active,
@@ -887,7 +887,7 @@ fieldset[disabled] .btn-info.active {
 
 .navbar .navbar-nav > li > a.btn-info.btn-fill, .btn-info.btn-fill {
     color: #FFFFFF;
-    background-color: #68B3C8;
+    background-color: #feb612;
     opacity: 1;
     filter: alpha(opacity=100);
 }
@@ -895,9 +895,9 @@ fieldset[disabled] .btn-info.active {
 .navbar .navbar-nav > li > a.btn-info.btn-fill:hover, .navbar .navbar-nav > li > a.btn-info.btn-fill:focus, .navbar .navbar-nav > li > a.btn-info.btn-fill:active, .navbar .navbar-nav > li > a.btn-info.btn-fill.active,
 .open > .navbar .navbar-nav > li > a.btn-info.btn-fill.dropdown-toggle, .btn-info.btn-fill:hover, .btn-info.btn-fill:focus, .btn-info.btn-fill:active, .btn-info.btn-fill.active,
 .open > .btn-info.btn-fill.dropdown-toggle {
-    background-color: #3091B2;
+    background-color: #feb612;
     color: #FFFFFF;
-    border-color: #3091B2;
+    border-color: #feb612;
 }
 
 .navbar .navbar-nav > li > a.btn-info.btn-fill .caret, .btn-info.btn-fill .caret {
