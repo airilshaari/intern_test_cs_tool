@@ -23,4 +23,9 @@ Auth::routes();
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
 Route::get('/order', 'OrderController@index')->name('order');
-Route::post('/order', 'OrderController@searchOrder')->name('order.search');
+
+Route::get('/user', 'UserController@index')->name('user');
+Route::post('/addUser', 'UserController@addUser')->name('add_user');
+
+Route::get('/resetPassword', 'UserController@resetPassword')->name('reset_password');
+Route::post('/resetPasswordSubmit', 'UserController@resetPasswordSubmit')->name('reset_password_submit');

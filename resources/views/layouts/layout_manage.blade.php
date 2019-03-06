@@ -58,6 +58,12 @@
                         <p>Order Detail</p>
                     </a>
                 </li>
+                <li class="{{ Route::is('user') ? 'active' : '' }}">
+                    <a href="/user">
+                        <i class="ti-user"></i>
+                        <p>Add User</p>
+                    </a>
+                </li>
                 <!--<li>
                     <a href="user.html">
                         <i class="ti-user"></i>
@@ -94,18 +100,6 @@
                         <p>Notifications</p>
                     </a>
                 </li>-->
-                <li class="active-pro">
-                    <a href="{{ route('logout') }}"
-                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                        <i class="fa fa-sign-out"></i>
-                        <p>Logout</p>
-                    </a>
-
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
-                </li>
             </ul>
         </div>
     </div>
