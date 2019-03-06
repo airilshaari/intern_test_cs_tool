@@ -45,7 +45,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="password">Password</label>
+                                        <label for="password">Password*</label>
                                         <input type="password" name="password" class="form-control border-input" placeholder="Password" required>
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="confirmPassword">Confirm Password</label>
+                                        <label for="confirmPassword">Confirm Password*</label>
                                         <input type="password" name="confirm_password" class="form-control border-input" placeholder="Confirm Password" required>
                                     </div>
                                 </div>

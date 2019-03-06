@@ -45,7 +45,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="username">Username</label>
+                                        <label for="username">Username*</label>
                                         <input type="text" name="username" class="form-control border-input" placeholder="Username" required>
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="email">Email</label>
+                                        <label for="email">Email*</label>
                                         <input type="email" name="email" class="form-control border-input" placeholder="Email" required>
                                     </div>
                                 </div>
@@ -61,7 +61,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="password">Password</label>
+                                        <label for="password">Password*</label>
                                         <input type="password" name="password" class="form-control border-input" placeholder="Password" required>
                                     </div>
                                 </div>
