@@ -57,8 +57,14 @@ return [
         ],
 
         'mysql2' => [
+            'read' => [
+                'host' => env('DB_READ_HOST_2', '127.0.0.1'),
+            ],
+            'write' => [
+                'host' => env('DB_HOST_2', '127.0.0.1'),
+            ],
+            'sticky' => true,
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE_2', 'forge'),
             'username' => env('DB_USERNAME_2', 'forge'),
