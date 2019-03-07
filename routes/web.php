@@ -12,8 +12,9 @@
 */
 
 Route::get('/', function () {
-    if (\Illuminate\Support\Facades\Auth::check())
-        return view('dashboard');
+    if (\Illuminate\Support\Facades\Auth::check()) {
+        return redirect()->route('dashboard');
+    }
 
     return view('auth.login');
 });
