@@ -45,7 +45,7 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label for="orderNumber">Order Number*</label>
+                                        <label for="orderNumber">Order Number**</label>
                                         <input type="text" name="order_no" class="form-control border-input" placeholder="Order Number" required>
                                     </div>
                                 </div>
