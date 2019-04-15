@@ -33,9 +33,9 @@ class OrderController extends Controller
         $data = array();
 
         $data['order'] = (new CustomerOrder())->findOrder($order_no, $shop_id, $order_email);
-        //$data['order']->date_purchased = Carbon::createFromFormat('Y-m-d H:i:s', $data['order']->date_purchased, 'UTC')->setTimezone(config('app.timezone'))->format('d-m-Y g:iA');
 
         if ($data['order']) {
+            $data['order']->date_purchased = Carbon::createFromFormat('Y-m-d H:i:s', $data['order']->date_purchased, 'UTC')->setTimezone(config('app.timezone'))->format('d-m-Y g:iA');
             $data['shop_info'] = $data['order']->shopInfo()->first();
 
             $data['payment_details'] = NULL;
