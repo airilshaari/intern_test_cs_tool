@@ -78,10 +78,16 @@
                         <div class="content">
                             <form>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-8">
                                         <div class="form-group">
                                             <label >Shop Name</label>
                                             <input type="text" class="form-control border-input" value="<?php echo $data['shop_info']->shop_name.' ('.$data['order']->shop_id.')' ?>" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Order Number</label>
+                                            <input type="text" class="form-control border-input" value="<?php echo $data['order']->order_no ?>" readonly>
                                         </div>
                                     </div>
                                 </div>
@@ -94,8 +100,8 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label>Order Number</label>
-                                            <input type="text" class="form-control border-input" value="<?php echo $data['order']->order_no ?>" readonly>
+                                            <label>Date Purchased</label>
+                                            <input type="text" class="form-control border-input" value="<?php echo $data['order']->date_purchased ?>" readonly>
                                         </div>
                                     </div>
                                     <?php
