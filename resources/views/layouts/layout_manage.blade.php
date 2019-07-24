@@ -41,7 +41,7 @@
         <div class="sidebar-wrapper">
             <div class="logo">
                 <a href="/dashboard" class="simple-text">
-                    CS Tool
+                    Intern Test CS Tool
                 </a>
             </div>
 
